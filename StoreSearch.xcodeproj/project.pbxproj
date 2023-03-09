@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07DEA33629B96A8D0025C9B5 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DEA33529B96A8D0025C9B5 /* SearchResult.swift */; };
 		07FFBE0829B81C65000B998E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FFBE0729B81C65000B998E /* AppDelegate.swift */; };
 		07FFBE0A29B81C66000B998E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FFBE0929B81C66000B998E /* SceneDelegate.swift */; };
 		07FFBE0C29B81C66000B998E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FFBE0B29B81C66000B998E /* SearchViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07DEA33529B96A8D0025C9B5 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		07FFBE0429B81C65000B998E /* StoreSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoreSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07FFBE0729B81C65000B998E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07FFBE0929B81C66000B998E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				07FFBE1529B81C6A000B998E /* LaunchScreen.storyboard */,
 				07FFBE1829B81C6A000B998E /* Info.plist */,
 				07FFBE1029B81C66000B998E /* StoreSearch.xcdatamodeld */,
+				07DEA33529B96A8D0025C9B5 /* SearchResult.swift */,
 			);
 			path = StoreSearch;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				07FFBE0C29B81C66000B998E /* SearchViewController.swift in Sources */,
 				07FFBE0829B81C65000B998E /* AppDelegate.swift in Sources */,
+				07DEA33629B96A8D0025C9B5 /* SearchResult.swift in Sources */,
 				07FFBE0A29B81C66000B998E /* SceneDelegate.swift in Sources */,
 				07FFBE1229B81C66000B998E /* StoreSearch.xcdatamodeld in Sources */,
 			);
