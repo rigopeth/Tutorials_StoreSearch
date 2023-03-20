@@ -103,7 +103,7 @@ extension SearchViewController : UISearchBarDelegate {
                 /*let results = parse(data: data)
                 print("Got Result \(results)")*/
                 searchResults = parse(data: data)
-                searchResults.sort { $0 < $1}
+                searchResults.sort(by: <)
             }
             
             tableView.reloadData()
