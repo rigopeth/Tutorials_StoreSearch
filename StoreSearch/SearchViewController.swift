@@ -18,6 +18,7 @@ class SearchViewController: UIViewController {
     var searchResults = [SearchResult]()
     var hasSearched = false
     var isLoading = false
+    var dataTask : URLSessionDataTask?
     
     struct TableView {
         struct CellIdentifiers {
@@ -101,6 +102,7 @@ extension SearchViewController : UISearchBarDelegate {
         if !searchBar.text!.isEmpty {
             searchBar.resignFirstResponder()
             
+            dataTask?.cancel()
             isLoading = true
             tableView.reloadData()
             
@@ -111,10 +113,10 @@ extension SearchViewController : UISearchBarDelegate {
             
             let session = URLSession.shared
             
-            let dataTask = session.dataTask(with: url) { data, response, error in
+            dataTask = session.dataTask(with: url) { data, response, error in
                 
-                if let error = error {
-                    print("Failure! \(error.localizedDescription)")
+                if let error = error as NSError?, error.code == -999 {
+                    return //Search was cancelled
                 } else if let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 {
                     if let data = data {
                         self.searchResults = self.parse(data: data)
@@ -136,7 +138,7 @@ extension SearchViewController : UISearchBarDelegate {
                 }
             }
             
-            dataTask.resume()
+            dataTask?.resume()
             
             /*
             // Uso de Queue Dispatchers
