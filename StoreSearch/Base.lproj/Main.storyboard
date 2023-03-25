@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Search View Controller-->
+        <!--Search-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SearchViewController" customModule="StoreSearch" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Search" customClass="SearchViewController" customModule="StoreSearch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -37,7 +37,7 @@
                                 <rect key="frame" x="0.0" y="51" width="375" height="44"/>
                                 <items>
                                     <barButtonItem style="plain" id="RJa-xe-n8K">
-                                        <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="xES-Y6-00J">
+                                        <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="xES-Y6-00J">
                                             <rect key="frame" x="16" y="5.5" width="343" height="33"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <segments>
@@ -73,14 +73,64 @@
                         <outlet property="searchBar" destination="erS-Ba-qqJ" id="ZE8-w2-izc"/>
                         <outlet property="segmentedControl" destination="xES-Y6-00J" id="CWo-Fm-TRp"/>
                         <outlet property="tableView" destination="pOJ-Op-Zxg" id="0nN-i4-ura"/>
+                        <segue destination="awA-va-Ixj" kind="presentation" identifier="ShowDetail" id="UoR-WE-jrt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="36" y="3.1484257871064472"/>
         </scene>
+        <!--Detail-->
+        <scene sceneID="hXe-Ri-Qm7">
+            <objects>
+                <viewController id="awA-va-Ixj" userLabel="Detail" customClass="DetailViewController" customModule="StoreSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ppr-M9-TwX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kn5-aU-ZC8" userLabel="Pop-up View">
+                                <rect key="frame" x="47.5" y="183.5" width="280" height="280"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhi-qp-a9y" userLabel="Close Button">
+                                        <rect key="frame" x="222" y="8" width="50" height="34"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="xmark.circle.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="close" destination="awA-va-Ixj" eventType="touchUpInside" id="uFT-jc-7If"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="DetailBG"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="LSz-EZ-YMd"/>
+                                    <constraint firstItem="xhi-qp-a9y" firstAttribute="top" secondItem="kn5-aU-ZC8" secondAttribute="top" constant="8" id="MLq-6h-bFt"/>
+                                    <constraint firstAttribute="height" constant="280" id="Zze-cc-CPI"/>
+                                    <constraint firstAttribute="trailing" secondItem="xhi-qp-a9y" secondAttribute="trailing" constant="8" id="teb-hv-vVp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="67Y-jB-vkx"/>
+                        <color key="backgroundColor" name="Artist Name"/>
+                        <constraints>
+                            <constraint firstItem="kn5-aU-ZC8" firstAttribute="centerY" secondItem="ppr-M9-TwX" secondAttribute="centerY" id="AV5-lN-FZL"/>
+                            <constraint firstItem="kn5-aU-ZC8" firstAttribute="centerX" secondItem="ppr-M9-TwX" secondAttribute="centerX" id="PZv-Wm-hOO"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mO3-yV-ETZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="817" y="3"/>
+        </scene>
     </scenes>
+    <color key="tintColor" name="Artist Name"/>
     <resources>
+        <image name="xmark.circle.fill" catalog="system" width="128" height="123"/>
+        <namedColor name="Artist Name">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="DetailBG">
+            <color red="1" green="1" blue="1" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="SearchBar">
             <color red="0.70588235294117652" green="0.94117647058823528" blue="0.82352941176470584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
