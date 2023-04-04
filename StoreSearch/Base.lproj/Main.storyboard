@@ -38,7 +38,7 @@
                                 <rect key="frame" x="0.0" y="51" width="375" height="44"/>
                                 <items>
                                     <barButtonItem style="plain" id="RJa-xe-n8K">
-                                        <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="xES-Y6-00J">
+                                        <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="xES-Y6-00J">
                                             <rect key="frame" x="16" y="5.5" width="343" height="33"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <segments>
@@ -201,10 +201,10 @@
                         <color key="backgroundColor" name="Artist Name"/>
                         <constraints>
                             <constraint firstItem="kn5-aU-ZC8" firstAttribute="centerY" secondItem="ppr-M9-TwX" secondAttribute="centerY" id="AV5-lN-FZL"/>
-                            <constraint firstItem="kn5-aU-ZC8" firstAttribute="leading" relation="lessThanOrEqual" secondItem="67Y-jB-vkx" secondAttribute="leading" constant="32" id="Lhi-lj-vhZ"/>
+                            <constraint firstItem="kn5-aU-ZC8" firstAttribute="leading" secondItem="ppr-M9-TwX" secondAttribute="leading" constant="32" id="Lhi-lj-vhZ"/>
                             <constraint firstItem="67Y-jB-vkx" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="kn5-aU-ZC8" secondAttribute="bottom" constant="16" id="OFA-CE-FfY"/>
                             <constraint firstItem="kn5-aU-ZC8" firstAttribute="centerX" secondItem="ppr-M9-TwX" secondAttribute="centerX" id="PZv-Wm-hOO"/>
-                            <constraint firstItem="67Y-jB-vkx" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="kn5-aU-ZC8" secondAttribute="trailing" constant="32" id="XYv-eF-sB8"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kn5-aU-ZC8" secondAttribute="trailing" constant="32" id="XYv-eF-sB8"/>
                             <constraint firstItem="kn5-aU-ZC8" firstAttribute="top" relation="greaterThanOrEqual" secondItem="67Y-jB-vkx" secondAttribute="top" constant="16" id="jIL-uQ-7fp"/>
                         </constraints>
                     </view>

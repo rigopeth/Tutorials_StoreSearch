@@ -20,6 +20,11 @@ class DetailViewController: UIViewController {
     var searchResult : SearchResult!
     var downloadTask : URLSessionDownloadTask?
     
+    required init? (coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        transitioningDelegate = self
+    }
+    
     deinit {
         print("deinit \(self)")
         downloadTask?.cancel()
@@ -37,6 +42,10 @@ class DetailViewController: UIViewController {
         if searchResult != nil {
             updateUI()
         }
+        view.backgroundColor = UIColor.clear
+        let dimmingView = GradientView(frame: CGRect.zero)
+        dimmingView.frame = view.bounds
+        view.insertSubview(dimmingView, at: 0)
     }
     
     // MARK: - Actions
@@ -97,6 +106,17 @@ extension DetailViewController : UIGestureRecognizerDelegate{
         if let url = URL(string: searchResult.storeURL) {
             UIApplication.shared.open(url,options: [:],completionHandler: nil)
         }
+    }
+    
+}
+
+extension DetailViewController: UIViewControllerTransitioningDelegate {
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return BounceAnimationController()
+    }
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return SlideOutAnimationController()
     }
     
 }
