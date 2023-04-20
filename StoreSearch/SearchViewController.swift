@@ -14,7 +14,7 @@ class SearchViewController: UIViewController {
     
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     
-
+    var landscapeVC: LandscapeViewController?
     
     var searchResults = [SearchResult]()
     var hasSearched = false
@@ -48,7 +48,61 @@ class SearchViewController: UIViewController {
         
     }
     
+// MARK: - Rotation
+    
+    override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.willTransition(to: newCollection, with: coordinator)
+        
+        switch newCollection.verticalSizeClass {
+        case .compact:
+            showLandscape(with: coordinator)
+        case .regular, .unspecified :
+            hideLandscape(with: coordinator)
+        @unknown default:
+            break
+        }
+    }
+    
 // MARK: - Helper Methods
+    
+    func showLandscape (with coordinator: UIViewControllerTransitionCoordinator){
+        // 1
+        guard landscapeVC == nil else {return}
+        
+        //2
+        landscapeVC = storyboard!.instantiateViewController(withIdentifier: "LandscapeViewController") as? LandscapeViewController
+        if let controller = landscapeVC {
+            //3
+            controller.view.frame = view.bounds
+            controller.view.alpha = 0
+            //4
+            view.addSubview(controller.view) // Add to parent
+            addChild(controller) // Add to the parent ViewController
+            
+            coordinator.animate(alongsideTransition: { _ in
+                controller.view.alpha = 1
+                self.searchBar.resignFirstResponder()
+                if self.presentedViewController != nil {
+                    self.dismiss(animated: true, completion: nil)
+                }
+            }, completion: { _ in
+                controller.didMove(toParent: self)
+            })
+        }
+    }
+    
+    func hideLandscape(with coordinator: UIViewControllerTransitionCoordinator) {
+        if let controller = landscapeVC {
+            controller.willMove(toParent: nil)
+            coordinator.animate(alongsideTransition: {_ in
+                controller.view.alpha = 0
+            }, completion: { _ in
+                controller.view.removeFromSuperview() //Remove form Parent ViewController
+                controller.removeFromParent() // Remove from Parent
+                self.landscapeVC = nil
+            })
+        }
+    }
     
     func iTunesURL(searchText : String, category: Int) -> URL {
         
