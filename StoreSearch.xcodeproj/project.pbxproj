@@ -25,6 +25,7 @@
 		07FFBE1429B81C6A000B998E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07FFBE1329B81C6A000B998E /* Assets.xcassets */; };
 		D39322C329F1969600D4A2F1 /* LandscapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39322C229F1969600D4A2F1 /* LandscapeViewController.swift */; };
 		D39322C729F1B26500D4A2F1 /* FadeOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39322C629F1B26500D4A2F1 /* FadeOutAnimationController.swift */; };
+		D3E9EA4929F2F03100DBF5D8 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E9EA4829F2F03100DBF5D8 /* Search.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		07FFBE1829B81C6A000B998E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D39322C229F1969600D4A2F1 /* LandscapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeViewController.swift; sourceTree = "<group>"; };
 		D39322C629F1B26500D4A2F1 /* FadeOutAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeOutAnimationController.swift; sourceTree = "<group>"; };
+		D3E9EA4829F2F03100DBF5D8 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				07A2A9C929D7E2BD00F639DA /* BounceAnimationController.swift */,
 				07A2A9CB29D8040800F639DA /* SlideOutAnimationController.swift */,
 				D39322C229F1969600D4A2F1 /* LandscapeViewController.swift */,
+				D3E9EA4829F2F03100DBF5D8 /* Search.swift */,
 			);
 			path = StoreSearch;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				0700F2AF29CE8AFB00D9A0DB /* DetailViewController.swift in Sources */,
 				D39322C329F1969600D4A2F1 /* LandscapeViewController.swift in Sources */,
 				07A2A9C829D7A7FD00F639DA /* GradientView.swift in Sources */,
+				D3E9EA4929F2F03100DBF5D8 /* Search.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
