@@ -17,6 +17,8 @@ class LandscapeViewController: UIViewController {
     
     @IBOutlet weak var pageControl: UIPageControl!
     
+    private var donwloads = [URLSessionDownloadTask]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -85,9 +87,9 @@ class LandscapeViewController: UIViewController {
         var x = marginX
         for(index, result) in searchResults.enumerated(){
             //1
-            let button = UIButton(type: .system)
-            button.backgroundColor =  UIColor.white
-            button.setTitle("\(index)", for: .normal)
+            let button = UIButton(type: .custom)
+            button.setBackgroundImage(UIImage(named: "LandscapeButton"),for: .normal)
+            donwloadImage(for: result, andPlaceOn: button)
             //2
             button.frame = CGRect(x: x + paddingHorz, y: marginY + CGFloat(row) * itemHeight + paddingVert, width: buttonWidth, height: buttonHeight)
             //3
@@ -113,6 +115,13 @@ class LandscapeViewController: UIViewController {
         
     }
     
+    deinit{
+        print("deinit \(self)")
+        for task in donwloads{
+            task.cancel()
+        }
+    }
+    
     
     // MARK: - Actions
     
@@ -127,6 +136,27 @@ class LandscapeViewController: UIViewController {
                 y: 0)
         },
         completion: nil)
+    }
+    
+    // MARK: - Display Buttons Images
+    private func donwloadImage(for searchResult: SearchResult, andPlaceOn button : UIButton){
+        if let url = URL(string: searchResult.imageSmall) {
+            let task = URLSession.shared.downloadTask(with: url) {
+                [weak button] url, _ , error in
+                if error == nil, let url = url,
+                    let data = try? Data(contentsOf: url),
+                   let image = UIImage(data: data) {
+                    DispatchQueue.main.async {
+                        if let button = button {
+                            button.setImage(image, for: .normal)
+                        }
+                    }
+                }
+            }
+            task.resume()
+            donwloads.append(task)
+        }
+        
     }
 
 }
