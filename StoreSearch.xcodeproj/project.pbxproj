@@ -13,16 +13,18 @@
 		07A2A9CA29D7E2BD00F639DA /* BounceAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A2A9C929D7E2BD00F639DA /* BounceAnimationController.swift */; };
 		07A2A9CC29D8040800F639DA /* SlideOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A2A9CB29D8040800F639DA /* SlideOutAnimationController.swift */; };
 		07A399D929BA61A000E18D5D /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A399D829BA61A000E18D5D /* SearchResultCell.swift */; };
-		07A399DB29BA6B0C00E18D5D /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07A399DA29BA6B0C00E18D5D /* NothingFoundCell.xib */; };
-		07D4A98E29C803CA000CE401 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07D4A98D29C803CA000CE401 /* LoadingCell.xib */; };
 		07DEA33629B96A8D0025C9B5 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DEA33529B96A8D0025C9B5 /* SearchResult.swift */; };
-		07DEA33829B99D630025C9B5 /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07DEA33729B99D630025C9B5 /* SearchResultCell.xib */; };
 		07FFBE0829B81C65000B998E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FFBE0729B81C65000B998E /* AppDelegate.swift */; };
 		07FFBE0A29B81C66000B998E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FFBE0929B81C66000B998E /* SceneDelegate.swift */; };
 		07FFBE0C29B81C66000B998E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FFBE0B29B81C66000B998E /* SearchViewController.swift */; };
 		07FFBE0F29B81C66000B998E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07FFBE0D29B81C66000B998E /* Main.storyboard */; };
 		07FFBE1229B81C66000B998E /* StoreSearch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07FFBE1029B81C66000B998E /* StoreSearch.xcdatamodeld */; };
 		07FFBE1429B81C6A000B998E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07FFBE1329B81C6A000B998E /* Assets.xcassets */; };
+		D365AEB929F6EC110001B463 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D365AEBB29F6EC110001B463 /* InfoPlist.strings */; };
+		D378C2E429F4305C000C0A97 /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D378C2E629F4305C000C0A97 /* NothingFoundCell.xib */; };
+		D378C2E829F436FD000C0A97 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D378C2EA29F436FD000C0A97 /* LoadingCell.xib */; };
+		D378C2EF29F45A5F000C0A97 /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D378C2F129F45A5F000C0A97 /* SearchResultCell.xib */; };
+		D378C2F629F45F5E000C0A97 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D378C2F829F45F5E000C0A97 /* Localizable.strings */; };
 		D39322C329F1969600D4A2F1 /* LandscapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39322C229F1969600D4A2F1 /* LandscapeViewController.swift */; };
 		D39322C729F1B26500D4A2F1 /* FadeOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39322C629F1B26500D4A2F1 /* FadeOutAnimationController.swift */; };
 		D3E9EA4929F2F03100DBF5D8 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E9EA4829F2F03100DBF5D8 /* Search.swift */; };
@@ -35,10 +37,7 @@
 		07A2A9C929D7E2BD00F639DA /* BounceAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceAnimationController.swift; sourceTree = "<group>"; };
 		07A2A9CB29D8040800F639DA /* SlideOutAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideOutAnimationController.swift; sourceTree = "<group>"; };
 		07A399D829BA61A000E18D5D /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
-		07A399DA29BA6B0C00E18D5D /* NothingFoundCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NothingFoundCell.xib; sourceTree = "<group>"; };
-		07D4A98D29C803CA000CE401 /* LoadingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
 		07DEA33529B96A8D0025C9B5 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
-		07DEA33729B99D630025C9B5 /* SearchResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
 		07FFBE0429B81C65000B998E /* StoreSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoreSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07FFBE0729B81C65000B998E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07FFBE0929B81C66000B998E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +46,16 @@
 		07FFBE1129B81C66000B998E /* StoreSearch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StoreSearch.xcdatamodel; sourceTree = "<group>"; };
 		07FFBE1329B81C6A000B998E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07FFBE1829B81C6A000B998E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D365AEB629F6D4660001B463 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D365AEBA29F6EC110001B463 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D365AEBC29F6EC2E0001B463 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D378C2E529F4305C000C0A97 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/NothingFoundCell.xib; sourceTree = "<group>"; };
+		D378C2E729F4310D000C0A97 /* nl */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = nl; path = nl.lproj/NothingFoundCell.xib; sourceTree = "<group>"; };
+		D378C2E929F436FD000C0A97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LoadingCell.xib; sourceTree = "<group>"; };
+		D378C2EC29F43735000C0A97 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/LoadingCell.strings; sourceTree = "<group>"; };
+		D378C2EE29F45844000C0A97 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Main.strings; sourceTree = "<group>"; };
+		D378C2F029F45A5F000C0A97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SearchResultCell.xib; sourceTree = "<group>"; };
+		D378C2F729F45F5E000C0A97 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D39322C229F1969600D4A2F1 /* LandscapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeViewController.swift; sourceTree = "<group>"; };
 		D39322C629F1B26500D4A2F1 /* FadeOutAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeOutAnimationController.swift; sourceTree = "<group>"; };
 		D3E9EA4829F2F03100DBF5D8 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
@@ -82,6 +91,7 @@
 		07FFBE0629B81C65000B998E /* StoreSearch */ = {
 			isa = PBXGroup;
 			children = (
+				D365AEBB29F6EC110001B463 /* InfoPlist.strings */,
 				D39322C429F1B24600D4A2F1 /* Utils */,
 				07FFBE0729B81C65000B998E /* AppDelegate.swift */,
 				07FFBE0929B81C66000B998E /* SceneDelegate.swift */,
@@ -91,10 +101,10 @@
 				07FFBE1829B81C6A000B998E /* Info.plist */,
 				07FFBE1029B81C66000B998E /* StoreSearch.xcdatamodeld */,
 				07DEA33529B96A8D0025C9B5 /* SearchResult.swift */,
-				07DEA33729B99D630025C9B5 /* SearchResultCell.xib */,
+				D378C2F129F45A5F000C0A97 /* SearchResultCell.xib */,
 				07A399D829BA61A000E18D5D /* SearchResultCell.swift */,
-				07A399DA29BA6B0C00E18D5D /* NothingFoundCell.xib */,
-				07D4A98D29C803CA000CE401 /* LoadingCell.xib */,
+				D378C2E629F4305C000C0A97 /* NothingFoundCell.xib */,
+				D378C2EA29F436FD000C0A97 /* LoadingCell.xib */,
 				0796039929CD79FE00B206FC /* UIImageView+DownloadImage.swift */,
 				0700F2AE29CE8AFB00D9A0DB /* DetailViewController.swift */,
 				07A2A9C729D7A7FD00F639DA /* GradientView.swift */,
@@ -102,6 +112,7 @@
 				07A2A9CB29D8040800F639DA /* SlideOutAnimationController.swift */,
 				D39322C229F1969600D4A2F1 /* LandscapeViewController.swift */,
 				D3E9EA4829F2F03100DBF5D8 /* Search.swift */,
+				D378C2F829F45F5E000C0A97 /* Localizable.strings */,
 			);
 			path = StoreSearch;
 			sourceTree = "<group>";
@@ -156,6 +167,7 @@
 			knownRegions = (
 				en,
 				Base,
+				nl,
 			);
 			mainGroup = 07FFBDFB29B81C65000B998E;
 			productRefGroup = 07FFBE0529B81C65000B998E /* Products */;
@@ -173,9 +185,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				07FFBE1429B81C6A000B998E /* Assets.xcassets in Resources */,
-				07D4A98E29C803CA000CE401 /* LoadingCell.xib in Resources */,
-				07DEA33829B99D630025C9B5 /* SearchResultCell.xib in Resources */,
-				07A399DB29BA6B0C00E18D5D /* NothingFoundCell.xib in Resources */,
+				D365AEB929F6EC110001B463 /* InfoPlist.strings in Resources */,
+				D378C2F629F45F5E000C0A97 /* Localizable.strings in Resources */,
+				D378C2E829F436FD000C0A97 /* LoadingCell.xib in Resources */,
+				D378C2EF29F45A5F000C0A97 /* SearchResultCell.xib in Resources */,
+				D378C2E429F4305C000C0A97 /* NothingFoundCell.xib in Resources */,
 				07FFBE0F29B81C66000B998E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,8 +225,53 @@
 			isa = PBXVariantGroup;
 			children = (
 				07FFBE0E29B81C66000B998E /* Base */,
+				D378C2EE29F45844000C0A97 /* nl */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D365AEBB29F6EC110001B463 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D365AEBA29F6EC110001B463 /* en */,
+				D365AEBC29F6EC2E0001B463 /* nl */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D378C2E629F4305C000C0A97 /* NothingFoundCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D378C2E529F4305C000C0A97 /* en */,
+				D378C2E729F4310D000C0A97 /* nl */,
+			);
+			name = NothingFoundCell.xib;
+			sourceTree = "<group>";
+		};
+		D378C2EA29F436FD000C0A97 /* LoadingCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D378C2E929F436FD000C0A97 /* Base */,
+				D378C2EC29F43735000C0A97 /* nl */,
+			);
+			name = LoadingCell.xib;
+			sourceTree = "<group>";
+		};
+		D378C2F129F45A5F000C0A97 /* SearchResultCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D378C2F029F45A5F000C0A97 /* Base */,
+			);
+			name = SearchResultCell.xib;
+			sourceTree = "<group>";
+		};
+		D378C2F829F45F5E000C0A97 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D378C2F729F45F5E000C0A97 /* en */,
+				D365AEB629F6D4660001B463 /* nl */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -222,6 +281,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -282,6 +342,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
